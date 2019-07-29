@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel='icon' href='./icons/favicon.ico' type='image/x-icon'/>
+        <title>Photo Shoot</title>
+        <link rel='stylesheet' href='./stylesheets/formulaire_style.css' >
+        <link rel='stylesheet' href='./stylesheets/photo.css'/>
+        <script src='formulaire_script.js'></script>
+    </head>
+
+
+    <body>
+
+        <!-- Deuxième page pour photo -->
+        <div id="photo-page" class="page">
+
+            <!-- Camera -->
+            <div id="areas">
+
+                <!-- Camera view -->
+                <div id='camera--area' class='area'>
+                    <video id="camera--view" autoplay playsinline></video>
+                </div>
+
+                <canvas id="camera--sensor"></canvas>
+
+                <!-- Camera buttons -->
+                <div id='buttons--area' class='area'>
+                    <button id="camera--snapshot" class="btn-round-50 btn-center"><img src='./icons/photo_50.png'>   </button>
+                    <button id="camera--retry"    class="btn-round-50 btn-left">  <img src='./icons/retry_50.png'>   </button>
+                    <button id="camera--download" class="btn-round-50 btn-right">
+                        <a  id="downloader" href="#" download="#"><img src='./icons/download_50.png'/></a>
+                    </button>
+                    <!--
+                        <button id="camera--download" class="btn-round-50 btn-right"> <img src='./icons/download_50.png'></button>
+                    -->                   
+                </div>
+            </div>
+        </div>   
+    </body>
+</html>
+
